@@ -15,9 +15,13 @@ def is_prime(a):
         return prime
 
 
+primos=0
+total_primos=0
+
 while True:
     try:
         a = int(input("Por favor, introduca el número a evaluar: "))
+        primos+=1
         if a==0:
             break
         if a<0:
@@ -31,9 +35,18 @@ while True:
         else:
             res==1
             print(1)
+        total_primos+=1
     except:
         print(-1)
         print("Hay un ERROR!!")
+
+
+print("Se calcularon: ", primos)
+print("El total de resultados primos es: ", total_primos)
+
+
+
+
 
 
 
