@@ -6,12 +6,13 @@ def perfect_number (a):
             d=i
             print(i)
             suma=suma+d
+            res=suma-a
 
-    if suma==a:
-        print("Is a perfect number")
+    if res<=a:
+        print(a, "Is a almost-perfect number")
 
     else:
-        print("Is NOT a perfect number")
+        print("Is NOT a almost-perfect number")
 
 
 a=int(input("Ingrese un numero: "))
